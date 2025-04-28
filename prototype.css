@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(0, 0, 123);
+    color: white;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.menu {
+    font-size: 24px;
+    cursor: pointer;
+}
+input {
+    margin: 80px 0px 0px 0px;
+    height: 20px;
+    border-radius: 4px;
+}
+.categories .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+.category a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+/*Bottom NavBar
+.bottom-navbar {
+    border-radius: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 0, 47);
+    padding: 10px 0;
+}
+.bottom-navbar a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+.bottom-navbar a:hover {
+    background-color: #555;
+}
+.bottom-navbar .middle {
+    width: 80px;
+    height: 80px;
+    margin-top: -50px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.bottom-navbar .middle:hover {
+    background-color: #ddd;
+}*/
+.navbar {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px 0;
+    background: rgb(0, 0, 123);
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, .05);
+}
+
+.navbar button {
+    cursor: pointer;
+    color: rgb(154, 154, 154);
+    width: 60px;
+    height: 50px;
+    border-radius: 20px;
+    background: transparent;
+    transition: all .25s ease;
+}
+
+.navbar button:active:not(.plus) {
+    transform: scale(1.2);
+}
+
+.navbar button.active {
+    color: rgb(154, 154, 154);
+}
+
+.navbar button i {
+    font-size: 1.5rem;
+    pointer-events: none;
+}
+
+.navbar button.plus {
+    height: 60px;
+    color: #fff;
+    background: rgb(243, 0, 0);
+    border-radius: 25px;
+    margin-top: -50px;
+    box-shadow: 0 10px 20px 0 #e84c4f66;
+}
+
+.navbar button.plus:hover {
+    transform: translateY(-4px);
+}
+
+.navbar .effect {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    border-radius: 18px;
+    background: #e84c4f26;
+    opacity: 0;
+}

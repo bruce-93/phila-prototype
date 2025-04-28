@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phila App</title>
+    <link rel="stylesheet" href="prototype.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <!-- BoxIcons v2.1.2 -->
+    <link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- AnimeJS v3.2.0 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js" type="text/javascript"></script>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <!--img src="profile.jpg" alt="User Profile"-->
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+            </svg>
+            <h2>Tintswalo</h2>
+        </div>
+        <section class="search">
+            <!--img src="logo.png" alt="Phila App Logo"-->
+            <input type="text" placeholder="Ask Phila AI anything">
+        </section>
+        <div class="menu">☰</div>
+    </header>
+    
+    <section class="categories">
+        <h3>Categories</h3>
+        <div class="grid">
+            <div class="category">
+                <a href="#">
+                    <span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAi5JREFUSEu11UmojlEYB/DfVaZMZYrMJFKyUhIWNkIsbCzIsJONheGGKEMoZWMhG0N2ipCklKQkljaGTGXMTDJFnEfnu3339d7vvZ+6Z/N2znue5/9//s9wWnTxauli/6oAumMvlqAHjmVCq/ANp9GK3x0RrQLYjw0VUW7GvmYBFmILZmbDOeiGK3k/BQNwPe+vpQj34EIRqCyCxThDO/lq92pSFPfhN/6F7fl6kDKAYDUja78D43AnGxUBJuMRdmEjIpJZVQCf0A998KUQchGg9jvufsY7DGoEMDAz6o8VONFJgNU4gvfJZkL+/jWtl2g4LiPCDqYhy2y8rQMpi2AormJSvnc77efiZRHgUDpck/S/mKJYiVclpdeRRHF1PI4mklFx4WttEeBBvjQEbzqo60YAYTI1NeUt3KtFVC/Rc4RMI/HsPwHG5hyGrxHFCCKhyxOLU1iG701K1BMncy+EryiSdkkOaR6iL7bmzixiNJJoW+r2nfiAiTWZi40WrGOoRWW8bjKCYXiBJ6lkR9dsiwDhdDBG4WmTAGPwOBMLgv/0QRycwyKczWP4bicbbVqWdEF9iRZzEPtgcTNLFPuPOaKfaST3SqBfM2Ak9EeWMzTvnc/v5wncJm/ZsIsEHUhAwSZG9MGc9HV5qIWvTfl8PXYjCBzHdkSJtq1GD868PN8DpNH6hfm4VHap6kVbmsfH9Nyd8XzGiscoIr2RmvNwrv9SElUAFeSrf3c5wB93u28ZrgmDegAAAABJRU5ErkJggg=="/>
+                    </span>
+                    <span>Mental Health</span>
+                </a>  
+            </div>
+            <div class="category">
+                <a href="#">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-arms-up" viewBox="0 0 16 16">
+                            <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                            <path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.5 1.5 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.7.7 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.7.7 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z"/>
+                        </svg>
+                    </span>
+                    <span>Fitness</span>
+                </a>  
+            </div>
+            <div class="category">
+                <a href="#">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                            <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5"/>
+                        </svg>
+                    </span>
+                    <span>Be Calm</span>
+                </a>  
+            </div>
+            <div class="category">
+                <a href="#">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-through-heart" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.854 15.854A.5.5 0 0 1 2 15.5V14H.5a.5.5 0 0 1-.354-.854l1.5-1.5A.5.5 0 0 1 2 11.5h1.793l.53-.53c-.771-.802-1.328-1.58-1.704-2.32-.798-1.575-.775-2.996-.213-4.092C3.426 2.565 6.18 1.809 8 3.233c1.25-.98 2.944-.928 4.212-.152L13.292 2 12.147.854A.5.5 0 0 1 12.5 0h3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-.854.354L14 2.707l-1.006 1.006c.236.248.44.531.6.845.562 1.096.585 2.517-.213 4.092-.793 1.563-2.395 3.288-5.105 5.08L8 13.912l-.276-.182a22 22 0 0 1-2.685-2.062l-.539.54V14a.5.5 0 0 1-.146.354zm2.893-4.894A20.4 20.4 0 0 0 8 12.71c2.456-1.666 3.827-3.207 4.489-4.512.679-1.34.607-2.42.215-3.185-.817-1.595-3.087-2.054-4.346-.761L8 4.62l-.358-.368c-1.259-1.293-3.53-.834-4.346.761-.392.766-.464 1.845.215 3.185.323.636.815 1.33 1.519 2.065l1.866-1.867a.5.5 0 1 1 .708.708z"/>
+                        </svg>
+                    </span>
+                    <span>GBV Unit</span>
+                </a>  
+            </div>
+            <div class="category">
+                <a href="#">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-capsule-pill" viewBox="0 0 16 16">
+                            <path d="M11.02 5.364a3 3 0 0 0-4.242-4.243L1.121 6.778a3 3 0 1 0 4.243 4.243l5.657-5.657Zm-6.413-.657 2.878-2.879a2 2 0 1 1 2.829 2.829L7.435 7.536zM12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8m-.5 1.042a3 3 0 0 0 0 5.917zm1 5.917a3 3 0 0 0 0-5.917z"/>
+                        </svg>
+                    </span>
+                    <span>Substance Abuse Aid</span>
+                </a>  
+            </div>
+            <div class="category">
+                <a href="#">
+                    <span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAX9JREFUSEu1lbtKBEEQRc8qpkbCgoovEB9gYGKg4uMrTPwBf8BswdzcPxD8DBU1VxAR34GKaCTm2leql6GdGbtndyYZaIZzb92qrmlQ89OomU83BPqdyR2gF2gBn1nTnQoMACfAlEFvgDXgxYt0IiD4ETALPBhwHLgH5n0lVQWyzr1raRwCk8A2sKuDKgJFsXRFQPBjYAZ4BL4BH0sPMGbnc8BXagVZ50/Akgn4WMTz58+pTc6DC1J03p7UmB40bVo0ipqQFSAKHhOR4GfAhMEXgTcgK/onltiLVgb3oqXwsgqy8Gtg1ZwP2RSpon/hRQIhfBn4AAQ/BUZj4UUCF4Dm+NI1dx14B4at0XJ+ZxW1R7FsI4dTNA1cmWNdJjnX5dHOGQFubZlFwfMq2AL23D7Zd7BNi0OxKB6NqJ+i6N9IWMGBq2DDGqn9vgD0AVpoavRrNNk+DAVU+mAAkXM1OhmeF5HiUPbKXDtG73PbOanmf7+PWRWVwKnLrrJI7RX8AGaFXhn8IYGaAAAAAElFTkSuQmCC"/>
+                    </span>
+                    <span>Motivation Corner</span>
+                </a>  
+            </div>
+            <div class="category">
+                <a href="#">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-briefcase" viewBox="0 0 16 16">
+                            <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v8A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-8A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5m1.886 6.914L15 7.151V12.5a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5V7.15l6.614 1.764a1.5 1.5 0 0 0 .772 0M1.5 4h13a.5.5 0 0 1 .5.5v1.616L8.129 7.948a.5.5 0 0 1-.258 0L1 6.116V4.5a.5.5 0 0 1 .5-.5"/>
+                        </svg>
+                    </span>
+                    <span>Job Opportunities</span>
+                </a>  
+            </div>
+            <div class="category">
+                <a href="#">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-terminal" viewBox="0 0 16 16">
+                            <path d="M6 9a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3A.5.5 0 0 1 6 9M3.854 4.146a.5.5 0 1 0-.708.708L4.793 6.5 3.146 8.146a.5.5 0 1 0 .708.708l2-2a.5.5 0 0 0 0-.708z"/>
+                            <path d="M2 1a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zm12 1a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1z"/>
+                        </svg>
+                    </span>
+                    <span>Courses/Programs</span>
+                </a>  
+            </div>
+            <div class="category">
+                <a href="#">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                            <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                        </svg>
+                    </span>
+                    <span>Library</span>
+                </a>  
+            </div>
+            <div class="category">
+                <a href="#">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-clipboard-pulse" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M10 1.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zm-5 0A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5v1A1.5 1.5 0 0 1 9.5 4h-3A1.5 1.5 0 0 1 5 2.5zm-2 0h1v1H3a1 1 0 0 0-1 1V14a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V3.5a1 1 0 0 0-1-1h-1v-1h1a2 2 0 0 1 2 2V14a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V3.5a2 2 0 0 1 2-2m6.979 3.856a.5.5 0 0 0-.968.04L7.92 10.49l-.94-3.135a.5.5 0 0 0-.895-.133L4.232 10H3.5a.5.5 0 0 0 0 1h1a.5.5 0 0 0 .416-.223l1.41-2.115 1.195 3.982a.5.5 0 0 0 .968-.04L9.58 7.51l.94 3.135A.5.5 0 0 0 11 11h1.5a.5.5 0 0 0 0-1h-1.128z"/>
+                        </svg>
+                    </span>
+                    <span>Quick Mental Health Test</span>
+                </a>  
+            </div>
+            <div class="category">
+                <a href="#">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-card-checklist" viewBox="0 0 16 16">
+                            <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2z"/>
+                            <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0M7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0"/>
+                        </svg>
+                    </span>
+                    <span>Learn New Skill</span>
+                </a>  
+            </div>
+            <!--div class="category">
+                <a href="#">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                        </svg>
+                    </span>
+                    <span>Notifications</span>
+                </a>
+
+            </div-->
+        </div>
+    </section>
+
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <!--Bottom Navbar-->
+    <div class="navbar">
+        <div class="effect"></div>
+        <button class="active">
+            <i class="bx bx-home"></i>
+        </button>
+        <button>
+            <i class="bx bx-user"></i>
+        </button>
+        <button class="plus">
+            <i class="bx bx-alarm-exclamation"></i>
+        </button>
+        <button>
+            <i class="bx bx-bell"></i>
+        </button>
+        <button>
+            <i class="bx bx-chat"></i>
+        </button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
